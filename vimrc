@@ -47,8 +47,6 @@ set cursorline                    " highlight cursorline
 filetype indent on
 set filetype=html
 set smartindent
-" Sort CSS brace contents
-command! SortCSS :g#\({\n\)\@<=#.,/}/sort
 
 " highlight 80 char column
 " set colorcolumn=81
@@ -93,3 +91,6 @@ au VimResized * :wincmd =
 " HTML/CSS autocomplete
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+
+" Sort CSS brace contents
+command! SortCSS :g#\({\n\)\@<=#.,/}/sort
