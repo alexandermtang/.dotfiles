@@ -77,7 +77,6 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 " Toggles
-nnoremap <C-g> :GundoToggle<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-t> :TagbarToggle<CR>
 
