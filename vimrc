@@ -7,7 +7,6 @@ Bundle 'gmarik/vundle'
 " Bundle repos
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
-Bundle 'sjl/gundo.vim'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'majutsushi/tagbar'
 Bundle 'ZeusTheTrueGod/vim-format-js'

@@ -2,6 +2,7 @@
 ############################
 # .make.sh
 # This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
+# Also installs Vundle and associated packages in vimrc
 ############################
 
 ########## Variables
@@ -30,5 +31,8 @@ for file in $files; do
     ln -s $dir/$file ~/.$file
 done
 
+# install vundle
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+
+# run BundleInstall in vim
 vim -c BundleInstall -c q -c q
