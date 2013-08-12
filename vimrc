@@ -5,32 +5,32 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Bundle repos
+Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
-Bundle 'Lokaltog/vim-powerline'
 Bundle 'majutsushi/tagbar'
-Bundle 'ZeusTheTrueGod/vim-format-js'
 Bundle 'ervandew/supertab'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'godlygeek/tabular'
 
 " Basic Setup
-set nocompatible      " Use vim, no vi defaults
-set number            " Show line numbers
-set ruler             " Show line and column number
-syntax enable         " Turn on syntax highlighting allowing local overrides
-set encoding=utf-8    " Set default encoding to UTF-8
+colorscheme wombat256tang   " Colorscheme
+set nocompatible            " Use vim, no vi defaults
+set number                  " Show line numbers
+set ruler                   " Show line and column number
+syntax enable               " Turn on syntax highlighting allowing local overrides
 set mouse=a
-set visualbell        " Turn off error bells
-set term=xterm-256color
+set visualbell              " Turn off error bells
+set lazyredraw              " Don't update while in macro
+set ttyfast                 " Improves redrawing
 
 " Powerline config
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show unicode glyphs
-" let g:Powerline_symbols = 'fancy'
+set t_Co=256
+let g:Powerline_symbols = 'fancy'
 
 " Colorscheme
-colorscheme wombat256tang
 
 " Whitespace
 set nowrap                        " don't wrap lines
