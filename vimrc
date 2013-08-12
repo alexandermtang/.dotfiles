@@ -10,7 +10,6 @@ Bundle 'scrooloose/syntastic'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'majutsushi/tagbar'
 Bundle 'ZeusTheTrueGod/vim-format-js'
-Bundle 'tpope/vim-rails'
 Bundle 'ervandew/supertab'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'godlygeek/tabular'
@@ -23,11 +22,12 @@ syntax enable         " Turn on syntax highlighting allowing local overrides
 set encoding=utf-8    " Set default encoding to UTF-8
 set mouse=a
 set visualbell        " Turn off error bells
+set term=xterm-256color
 
 " Powerline config
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show unicode glyphs
-let g:Powerline_symbols = 'fancy'
+" let g:Powerline_symbols = 'fancy'
 
 " Colorscheme
 colorscheme wombat256tang
@@ -49,7 +49,7 @@ set smartindent
 
 " highlight 80 char column
 " set colorcolumn=81
-execute "set colorcolumn=".join(range(81,200), ',')
+execute "set colorcolumn=".join(range(81,300), ',')
 
 " List chars
 set listchars=""                  " Reset the listchars
