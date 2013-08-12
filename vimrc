@@ -25,8 +25,8 @@ set lazyredraw              " Don't update while in macro
 set ttyfast                 " Improves redrawing
 
 " Powerline config
-set laststatus=2   " Always show the statusline
-set encoding=utf-8 " Necessary to show unicode glyphs
+set laststatus=2            " Always show the statusline
+set encoding=utf-8          " Necessary to show unicode glyphs
 set t_Co=256
 let g:Powerline_symbols = 'fancy'
 
