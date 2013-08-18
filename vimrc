@@ -30,8 +30,6 @@ set encoding=utf-8          " Necessary to show unicode glyphs
 set t_Co=256
 let g:Powerline_symbols = 'fancy'
 
-" Colorscheme
-
 " Whitespace
 set nowrap                        " don't wrap lines
 set tabstop=2                     " a tab is two spaces
@@ -77,8 +75,9 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 " Toggles
-nnoremap <C-n> :NERDTreeToggle<CR>
-nnoremap <C-t> :TagbarToggle<CR>
+let mapleader = ","
+nnoremap <Leader>n :NERDTreeToggle<CR>
+nnoremap <Leader>t :TagbarToggle<CR>
 
 " Remap jk to Esc, Esc doesn't go back
 inoremap jk <Esc>`^
