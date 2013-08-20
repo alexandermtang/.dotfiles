@@ -6,12 +6,21 @@ Bundle 'gmarik/vundle'
 
 " Bundle repos
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/nerdtree'
 Bundle 'majutsushi/tagbar'
-Bundle 'ervandew/supertab'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'godlygeek/tabular'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'jiangmiao/auto-pairs'
+Bundle 'tmhedberg/matchit'
+Bundle 'alexandermtang/vim-ragtag'
+
+" Powerline config
+set laststatus=2            " Always show the statusline
+set encoding=utf-8          " Necessary to show unicode glyphs
+set t_Co=256
+let g:Powerline_symbols = 'fancy'
 
 " Basic Setup
 colorscheme wombat256tang   " Colorscheme
@@ -23,12 +32,7 @@ set mouse=a
 set visualbell              " Turn off error bells
 set lazyredraw              " Don't update while in macro
 set ttyfast                 " Improves redrawing
-
-" Powerline config
-set laststatus=2            " Always show the statusline
-set encoding=utf-8          " Necessary to show unicode glyphs
-set t_Co=256
-let g:Powerline_symbols = 'fancy'
+filetype plugin on          " Needed by matchit to detect filetypes
 
 " Whitespace
 set nowrap                        " don't wrap lines
@@ -39,11 +43,6 @@ set expandtab                     " use spaces, not tabs
 set list                          " Show invisible characters
 set backspace=indent,eol,start    " backspace through everything in insert mode
 set cursorline                    " highlight cursorline
-
-" gg=G to autoindent html
-filetype indent on
-set filetype=html
-set smartindent
 
 " highlight 80 char column
 " set colorcolumn=81
