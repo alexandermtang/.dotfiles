@@ -13,3 +13,5 @@
   dump = cat-file -p
 [core]
 	excludesfile = /Users/alextang/.gitignore_global
+[push]
+	default = simple

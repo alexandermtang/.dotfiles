@@ -13,16 +13,25 @@ Bundle 'tomtom/tcomment_vim'
 Bundle 'godlygeek/tabular'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'jiangmiao/auto-pairs'
+
+" Use % for html tags
 Bundle 'tmhedberg/matchit'
-Bundle 'alexandermtang/vim-ragtag'
+
+" Needed by snipMate
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
+Bundle 'honza/vim-snippets'
+imap <c-j> <Plug>snipMateNextOrTrigger
+smap <c-j> <Plug>snipMateNextOrTrigger
 
 " Powerline config
 set laststatus=2            " Always show the statusline
 set encoding=utf-8          " Necessary to show unicode glyphs
-set t_Co=256
 let g:Powerline_symbols = 'fancy'
 
 " Basic Setup
+set t_Co=256                " 256 colors
 colorscheme wombat256tang   " Colorscheme
 set nocompatible            " Use vim, no vi defaults
 set number                  " Show line numbers
