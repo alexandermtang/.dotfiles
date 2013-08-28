@@ -24,6 +24,8 @@ Bundle "garbas/vim-snipmate"
 Bundle 'honza/vim-snippets'
 imap <c-j> <Plug>snipMateNextOrTrigger
 smap <c-j> <Plug>snipMateNextOrTrigger
+imap <c-k> <Plug>snipMateBack
+smap <c-k> <Plug>snipMateBack
 
 " Powerline config
 set laststatus=2            " Always show the statusline
@@ -62,9 +64,7 @@ set listchars=""                  " Reset the listchars
 set listchars=tab:\ \             " Show tabs as "  "
 set listchars+=trail:¬            " Show trailing spaces as "¬"
 set listchars+=extends:>          " The character to show in the last column when wrap is
-                                  " off and the line continues beyond the right of the screen
-set listchars+=precedes:<         " The character to show in the last column when wrap is
-                                  " off and the line continues beyond the right of the screen
+set listchars+=precedes:<         " off and the line continues beyond the right of the screen
 
 " Searching
 set hlsearch    " highlight matches
