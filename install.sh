@@ -38,3 +38,7 @@ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
 # run BundleInstall in vim
 vim -c BundleInstall -c q -c q
+
+# install git-prompt
+curl https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh -o ~/.git-prompt.sh
+

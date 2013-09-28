@@ -12,14 +12,6 @@ export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 
 # export CLICOLOR=1 # makes ls colorful
 
-COLOR_RED='\[\e[31m\]'
-COLOR_GREEN='\[\e[32m\]'
-COLOR_YELLOW='\[\e[33m\]'
-COLOR_BLUE='\[\e[34m\]'
-COLOR_RESET='\[\e[0m\]'
-
-PS1=${COLOR_BLUE}'\u'${COLOR_RESET}' \w '${COLOR_GREEN}'»'${COLOR_RESET}' '
-
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
@@ -34,3 +26,12 @@ done
 
 # Needed by PIL
 export PYTHONPATH="/usr/local/lib/python2.7/site-packages:$PYTHONPATH"
+
+COLOR_RED='\[\e[31m\]'
+COLOR_GREEN='\[\e[32m\]'
+COLOR_YELLOW='\[\e[33m\]'
+COLOR_BLUE='\[\e[34m\]'
+COLOR_RESET='\[\e[0m\]'
+source ~/.git-prompt.sh
+
+PS1=${COLOR_BLUE}'\u'${COLOR_RESET}' \w $(__git_ps1 "[%s]")\n'${COLOR_GREEN}'»'${COLOR_RESET}' '
